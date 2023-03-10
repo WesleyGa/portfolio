@@ -209,3 +209,7 @@ img {
 .nav_close:hover{
   color: var(--first-color-alt)
 }
+
+.exibir-menu{
+  bottom: 0;
+}
