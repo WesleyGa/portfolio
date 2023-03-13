@@ -4,47 +4,205 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- ICONS --->
-    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
-    <!-- CSS--->
-    <link rel="stylesheet" href="/portfolio/assets/css/styles.css">
 
-    <title> Portifolio Wesley </title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <!-- =====BOX ICONS===== -->
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>Portfolio website complete</title>
 </head>
 
 <body>
-    <!--Header -->
-    <header class="pHeader">
-        <nav class="nav container">
+    <!--===== HEADER =====-->
+    <header class="p-header">
+        <nav class="nav bd-grid">
             <div>
-            <a href="#" class="nav_logo">Wesley</a>
+                <a href="#" class="nav_logo">Wesley</a>
             </div>
-
 
             <div class="nav_menu" id="nav-menu">
-                
-                <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
-                
-                <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-              
-                <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                
-                <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-
+                <ul class="nav_list">
+                    <li class="nav_item"><a href="#home" class="nav_link active">Home</a></li>
+                    <li class="nav_item"><a href="#sobremim" class="nav_link">Sobre mim</a></li>
+                    <li class="nav_item"><a href="#skills" class="nav_link">Habilidades</a></li>
+                    <li class="nav_item"><a href="#contato" class="nav_link">Contato</a></li>
                 </ul>
-                <i class="uil uil-times nav_close" id="nav-close"></i>
             </div>
-            <div class="btns">
-                <div class="nav_mudarCor" id="nav-mudarCor">
-                    <i class="uil uil-apps"></i>
-                </div>
+
+            <div class="nav_trocar" id="nav-trocar">
+                <i class='bx bx-menu'></i>
             </div>
         </nav>
-
     </header>
 
+    <main class="l-main">
+        <!--===== HOME =====-->
+        <section class="home bd-grid" id="home">
+            <div class="home_data">
+                <h1 class="home_titulo">Oi,<br>eu sou <span class="home_titulo-cor">Wesley</span><br> </h1>
 
-    <script src="/portfolio/assets/js/main.js"></script>
+                <a href="https://drive.google.com/file/d/10cYH5nYF-c49asZ7DzOcG_1oEOkb2rQw/view?usp=share_link"
+                    class="button">Download CV</a>
+            </div>
+
+            <div class="home_social">
+                <a href="https://www.linkedin.com/in/wesley-gabriel-881328196/" class="home_social-icon"><i
+                        class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/WesleyGa" class="home_social-icon"><i class='bx bxl-github'></i></a>
+
+
+            </div>
+
+            <div class="home_img">
+                <svg class="home_bolha" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <mask id="mask0" mask-type="alpha">
+                        <path
+                            d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z" />
+                    </mask>
+                    <g mask="url(#mask0)">
+                        <path
+                            d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z" />
+                        <image class="home_bolha-img" x="50" y="60" href="/assets/img/eu12.jfif" />
+                    </g>
+                </svg>
+            </div>
+        </section>
+
+        <!--===== ABOUT =====-->
+        <section class="sobremim secao" id="sobremim">
+            <h2 class="secao-titulo">Sobre mim</h2>
+
+            <div class="sobremim_container bd-grid">
+                <div class="sobremim_img">
+                    <img src="assets/img/about.jpg" alt="">
+                </div>
+
+                <div>
+                    <h2 class="sobremim_subtitulo"></h2>
+                    <p class="sobremim_text">Atualmente, estou cursando o penúltimo semestre do curso de Análise e
+                        Desenvolvimento de Sistema pela Universidade Unimar de Marília. Estou à procura de uma
+                        oportunidade de estágio. Estou muito motivada para colocar meus conhecimentos em prática. Tenho
+                        certeza de que o estágio irá contribuir de maneira excepcional para a minha carreira.</p>
+                </div>
+            </div>
+        </section>
+
+        <!--===== Habilidades =====-->
+        <section class="skills secao" id="skills">
+            <div class="skills_container bd-grid">
+
+                <div>
+                    <h2 class="secao-titulo">Habilidades</h2>
+                    <h2 class="skills_subtitulo"></h2>
+                    <p class="skills_text"> </p>
+                    <div class="skills_data">
+                        <div class="skills_names">
+                            <i class='bx bxl-html5 skills_icon'></i>
+                            <span class="skills_name">HTML5</span>
+                        </div>
+                        <div class="skills_bar skills_html">
+
+                        </div>
+                        <div>
+                            <span class="skills_percentage">90%</span>
+                        </div>
+                    </div>
+                    <div class="skills_data">
+                        <div class="skills_names">
+                            <i class='bx bxl-css3 skills_icon'></i>
+                            <span class="skills_name">CSS3</span>
+                        </div>
+                        <div class="skills_bar skills_css">
+
+                        </div>
+                        <div>
+                            <span class="skills_percentage">60%</span>
+                        </div>
+                    </div>
+                    <div class="skills_data">
+                        <div class="skills_names">
+                            <i class='bx bxl-javascript skills_icon'></i>
+                            <span class="skills_name">JAVASCRPT</span>
+                        </div>
+                        <div class="skills_bar skills_js">
+
+                        </div>
+                        <div>
+                            <span class="skills_percentage">40%</span>
+                        </div>
+                    </div>
+                    <div class="skills_data">
+                        <div class="skills_names">
+                            <i class='bx bxs-java skills_icon'></i>
+                            <span class="skills_name">JAVA-WEB</span>
+                        </div>
+                        <div class="skills_bar skills_javaWeb">
+                        </div>
+                        <div>
+                            <span class="skills_percentage">60%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="skills secao" id="skills">
+            <!-- Projetos-->
+            <div>
+                <h2 class="secao-titulo">Projetos</h2>
+                <p class="skills_text"> </p>
+                <div class="skills_data">
+
+
+                    <div class="pro">
+                        <div class="breve">
+                            <p>EM BREVE</p>
+                        </div>
+                    </div>
+                    <div class="pro">
+                        <div class="breve">
+                            <p>EM BREVE</p>
+                        </div>
+                    </div>
+                    <div class="pro">
+                        <div class="breve">
+                            <p>EM BREVE</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!--CONTATO-->
+        <section class="contato secao" id="contato">
+            <h2 class="secao-titulo">Contato</h2>
+
+            <div class="contato_container bd-grid">
+                <form action="" class="contato_form">
+                    <input type="text" placeholder="Name" class="contato_input">
+                    <input type="mail" placeholder="Email" class="contato_input">
+                    <textarea name="" id="" cols="0" rows="10" class="contato_input"></textarea>
+                    <input type="button" value="Enviar" class="contato_button button">
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!--Footer-->
+    <footer class="footer">
+        <p class="footer_titulo">Wesley Gabriel</p>
+        <div class="footer_social">
+            <a href="#" class="footer_icon"><i class='bx bxl-instagram'></i></a>
+        </div>
+        <p class="footer_copy">Portfolio</p>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--Js-->
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
